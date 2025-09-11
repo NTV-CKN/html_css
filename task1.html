@@ -8,42 +8,30 @@
 </head>
 
 <body>
-    <table border="1" width="100%">
-        <thead>
-            <tr>
-                <th scope="col"></th>
-                <th scope="col" bgcolor="yellow">Home stater hosting</th>
-                <th scope="col" bgcolor="yellow">Premium business hosting</th>
-            </tr>
-        </thead>
+    <form action="signin.php" method="post">
+        <table border="1">
+            <thead>
+                <th scope="col" colspan="2">Sign In</td>
+            </thead>
 
-        <tbody>
-            <tr>
-                <td width="5%" align="center" bgcolor="gray">Disk space</td>
-                <td align="center">250 mb</td>
-                <td align="center">1 gb</td>
-            </tr>
-            <tr>
-                <td width="5%" align="center" bgcolor="gray">Bandwidth</td>
-                <td align="center">5 gb/month</td>
-                <td align="center">50 gb/month</td>
-            </tr>
-            <tr>
-                <td width="5%" align="center" bgcolor="gray">Database</td>
-                <td rowspan="2" align="center">1</td>
-                <td rowspan="2" align="center">10</td>
-            </tr>
-            <tr>
-                <td width="5%" align="center" bgcolor="gray">Email</td>
-            </tr>
-        </tbody>
+            <tbody>
+                <tr>
+                    <td width="15%">Email address</td>
+                    <td bgcolor="green"><input size="150" type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td width="15%">Password</td>
+                    <td bgcolor="green"><input size="150" type="password" name="password"></td>
+                </tr>
+            </tbody>
 
-        <tfoot>
-            <td colspan="3" align="center" bgcolor="green">
-                <h1>Sign up now and save 10%</h1>
-            </td>
-        </tfoot>
-    </table>
+            <tfoot>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Sign in"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
 </body>
 
 </html>
