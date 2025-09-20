@@ -4,24 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form control</title>
 </head>
 
 <body>
-    <!-- <a href="task1.html">Go to task 1</a> -->
-    <form>
-        <ul>
-            <li><input type="date"></li>
-            <li><input type="button" value="Button"></li>
-            <li><input type="color"></li>
-            <li><input type="email"></li>
-            <li><input type="password"></li>
-            <li><input type="file"></li>
-            <li><input type="radio"></li>
-            <li><input type="image" src="images/gif.gif" width="50px"></li>
-            <li><a href="task1.html">Go to task 1</a></li>
-            <li><a href="task2.html">Go to task 2</a></li>
-        </ul>
+    <form action="#" method="get">
+
+        <fieldset>
+
+            <legend>Type info:</legend>
+
+            <input placeholder="Enter your username" type="text" name="username" size="35" maxlength="20" required />
+            <br><br>
+
+            <input placeholder="Enter your password" type="password" name="password" size="15" minlength="6"
+                maxlength="10" />
+            <br><br>
+            
+            <textarea placeholder="Enter your secret question:" name="secret_question" rows="2" cols="40"></textarea>
+
+        </fieldset>
+
+        <p>
+            Gender:
+            <input id="gender_female" type="radio" name="gender" value="Female">
+            <label for="gender_female">Female</label>
+            <input id="gender_male" type="radio" name="gender" value="Male">
+
+            <label for="gender_male">Male</label>
+        </p>
+
+        <p>
+            Favorite:<br>
+            <input id="checkbox_football" name="favorite" type="checkbox" value="Football">
+            <label for="checkbox_football">Football</label>
+
+            <input id="checkbox_volleyball" name="favorite" type="checkbox" value="Volleyball">
+            <label for="checkbox_volleyball">Volleyball</label>
+
+            <input id="checkbox_badminton" name="favorite" type="checkbox" value="Badminton">
+            <label for="checkbox_badminton">Badminton</label>
+
+            <input id="checkbox_golf" name="favorite" type="checkbox" value="Golf">
+            <label for="checkbox_golf">Golf</label>
+        </p>
+
+        <p>
+            Dropdown: <select id="dropdown" name="dropdown"></select>
+        </p>
+        <script>
+            const dropdown = document.getElementById("dropdown")
+
+            for (let i = 1; i < 10; i++) {
+                let item = document.createElement("option")
+                item.value = "Drop " + i
+                item.text = "Drop " + i
+
+                dropdown.appendChild(item)
+            }
+        </script>
+
+        <p>
+            <!--Drop down with select multiple item-->
+            Dropdown2: <select id="dropdown2" name="dropdown2" multiple size="5"></select>
+
+        </p>
+        <script>
+            const dropdown2 = document.getElementById("dropdown2")
+
+            for (let i = 1; i < 10; i++) {
+                let item = document.createElement("option")
+                item.value = "Drop " + i
+                item.text = "Drop " + i
+
+                dropdown2.appendChild(item)
+            }
+        </script>
+
+        <p>
+            Image file: <input type="file" accept=".jpg, .png, .webp" name="image" />
+            <br>
+            Send:
+            <input align="center" type="image" width="40" height="40"
+                src="https://media.istockphoto.com/id/1290684294/vector/send-message-icon.jpg?s=612x612&w=0&k=20&c=8vwd4PDMzEELKMUrTQ7LZnpngAN5Bzs55sRJ09sA8FU=" />
+        </p>
+
     </form>
 </body>
 
