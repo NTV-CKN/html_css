@@ -4,92 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form control</title>
+    <title>Document</title>
 </head>
 
 <body>
-    <form action="#" method="get">
+    <!--start header-->
+    <div id="header">
+        <h1>Infix Shop</h1>
+        <ul>
+            <li><a href="pages/home.html">Home</a></li>
+            <li><a href="pages/news.html">News</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <!--end header-->
 
-        <fieldset>
+    <!--start content-->
+    <div id="content">
+        <p>Address: Canada caf na xis muooij</p>
+        <p>Email: <a href="mailto:infix@fake.mail.com">infix@fake.mail.com</a></p>
+        <p>Phone number: <a href="tel:0777212222">0777 212 222</a> </p>
 
-            <legend>Type info:</legend>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125766.39375493703!2d106.46675426618737!3d9.917310935313253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x319ff5aa014bf1a3%3A0xf8d5719e29bf4dd3!2zxJDDsiBC4bq_biBDaOG7lWk!5e0!3m2!1sen!2s!4v1758801074459!5m2!1sen!2s"
+            width="600" height="450" style="border:3;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <!--end content-->
 
-            <input placeholder="Enter your username" type="text" name="username" size="35" maxlength="20" required />
-            <br><br>
-
-            <input placeholder="Enter your password" type="password" name="password" size="15" minlength="6"
-                maxlength="10" />
-            <br><br>
-            
-            <textarea placeholder="Enter your secret question:" name="secret_question" rows="2" cols="40"></textarea>
-
-        </fieldset>
-
-        <p>
-            Gender:
-            <input id="gender_female" type="radio" name="gender" value="Female">
-            <label for="gender_female">Female</label>
-            <input id="gender_male" type="radio" name="gender" value="Male">
-
-            <label for="gender_male">Male</label>
-        </p>
-
-        <p>
-            Favorite:<br>
-            <input id="checkbox_football" name="favorite" type="checkbox" value="Football">
-            <label for="checkbox_football">Football</label>
-
-            <input id="checkbox_volleyball" name="favorite" type="checkbox" value="Volleyball">
-            <label for="checkbox_volleyball">Volleyball</label>
-
-            <input id="checkbox_badminton" name="favorite" type="checkbox" value="Badminton">
-            <label for="checkbox_badminton">Badminton</label>
-
-            <input id="checkbox_golf" name="favorite" type="checkbox" value="Golf">
-            <label for="checkbox_golf">Golf</label>
-        </p>
-
-        <p>
-            Dropdown: <select id="dropdown" name="dropdown"></select>
-        </p>
-        <script>
-            const dropdown = document.getElementById("dropdown")
-
-            for (let i = 1; i < 10; i++) {
-                let item = document.createElement("option")
-                item.value = "Drop " + i
-                item.text = "Drop " + i
-
-                dropdown.appendChild(item)
-            }
-        </script>
-
-        <p>
-            <!--Drop down with select multiple item-->
-            Dropdown2: <select id="dropdown2" name="dropdown2" multiple size="5"></select>
-
-        </p>
-        <script>
-            const dropdown2 = document.getElementById("dropdown2")
-
-            for (let i = 1; i < 10; i++) {
-                let item = document.createElement("option")
-                item.value = "Drop " + i
-                item.text = "Drop " + i
-
-                dropdown2.appendChild(item)
-            }
-        </script>
-
-        <p>
-            Image file: <input type="file" accept=".jpg, .png, .webp" name="image" />
-            <br>
-            Send:
-            <input align="center" type="image" width="40" height="40"
-                src="https://media.istockphoto.com/id/1290684294/vector/send-message-icon.jpg?s=612x612&w=0&k=20&c=8vwd4PDMzEELKMUrTQ7LZnpngAN5Bzs55sRJ09sA8FU=" />
-        </p>
-
-    </form>
+    <!--start footer-->
+    <div>
+        &copy; infix
+    </div>
 </body>
 
 </html>
