@@ -1,0 +1,49 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+      background: blanchedalmond; 
+      color: blue;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+i {
+    color: blueviolet;
+}
+
+i {
+    color: brown;
+    font-size: medium;
+}
+
+p {
+    color: blueviolet;
+}
+
+p b {
+    color: cornflowerblue;
+}
+
+li#html {
+    color: coral;
+}
+
+li#css {
+    color: deepskyblue;
+}
+
+li#js {
+    color: gold;
+}
+
+li#bootstrap {
+    color: chartreuse;
+}
+
+.content {
+    font-size: xx-large;
+}
